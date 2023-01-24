@@ -277,3 +277,27 @@ durante el Sprint en un ambiente
 de Test / UAT.
 
 ---
+
+### 4.3 - __Tipos de test - Manual y Automatizado__.
+
+- __Pruebas Manuales__:
+> Es un tipo de prueba de software donde los __testers__
+ejecutan manualmente los casos de prueba sin usar ninguna
+herramienta de automatizacion, utlizando diferentes
+tecnicas y metodos para validar los requisitos.
+Cualquier aplicacion nueva debe probarse manualmente antes
+de que esta pueda automatizarse.
+Requiere de mayor esfuerzo pero es necesaria para
+verificar la viabilidad de la automatizacion.
+
+- __Pruebas Automatizadas__:
+> Es una tecnica de testing automatico realizada por
+una herramienta. Se suele utilizar en conjunto de
+sistemas de repote automatico para proveer un testeo
+y reporte automatico sin tener que utilizar horas de un QA manual.
+Las principales ventajas del testeo automatico es su velocidad, no consume el tiempo de los QA manual, aumenta la cobertura de testing e incrementa la ejecucion de los test.
+Este tipo de test se suele utilizar cuando los tests son repetitivos, el proyecto se hace extenso lo que conlleva
+que probar todo manualmente se perderia mucho tiempo.
+
+---
+
