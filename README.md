@@ -213,3 +213,67 @@ cumple con lo solicitado.
 Son responsabilidad del __cliente/usuario final__, 
 se realizan al finalizar el Sprint para recibir 
 feedback de la aplicacion en un ambiente UAT.
+
+---
+### 4.2 - __Pruebas NO funcionales__.
+> Se enfocan en aspectos importantes pero
+no estan relacionados con las funciones que realiza
+el sistema.
+
+<br>
+
+> __Tipos de pruebas__.
+
+- __Pruebas de stress__.
+Intentan romper el sistema bajo condiciones de carga
+extremadamente pesadas.
+El proposito principal detras de esto es asegurar
+que el sistema falle y se recupere correctamente
+bajo situaciones crtiicas.
+Es responsabilidad de __Calidad__ y se realizan
+Antes / Durante o despues de un Sprint en un ambiente
+de Test / UAT.
+
+- __Pruebas de Performance__.
+Intenta determinar el rendimiento de un sistema
+para medir, validar o verificar los atributos
+de calidad del sistema, como la capacidad de respuesta,
+velocidad, escalabilidad y estabilidad en una variedad
+de carga.
+Es responsabilidad de __Calidad__ y se realizan
+Antes / Durante o despues de un Sprint en un ambiente
+de Test / UAT.
+
+- __Pruebas de seguridad__.
+Se buscan encontrar vulnerabilidades de seguridad.
+Es responsabilidad de __Calidad__ y se realizan
+Antes / Durante o despues de un Sprint en un ambiente
+de Test / UAT.
+
+- __Pruebas de instalacion__.
+Verifican todo lo relacionado con el despliegue
+del producto: documentacion, instalacion, configuracion
+post-instalacion, etc.
+Es responsabilidad de __Calidad__ y se realizan
+al finalizar el despliegue en un ambiente
+de Test / UAT.
+
+- __Pruebas de usabilidad__.
+Estan enfocadas en el usuario final y ayudan a crear
+una mejor experiencia tambien conocido como UX.
+Testean la facilidad de uso del usuario en terminos de
+operacion, aprendizaje y preparacion de entradas y salidas,
+Es responsabilidad de __Calidad__ y se realizan
+durante el Sprint en un ambiente
+de Test / UAT.
+
+- __Pruebas de Accesibilidad__.
+Tambien llamadas de "__Compliance__" (cumplimiento).
+Se realizan para verificar si se siguen o no los
+estandares definidos. Se realizan auditorias para verificar
+el cumplimiento de la norma.
+Es responsabilidad de __Calidad__ y se realizan
+durante el Sprint en un ambiente
+de Test / UAT.
+
+---
