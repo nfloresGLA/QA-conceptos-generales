@@ -301,3 +301,140 @@ que probar todo manualmente se perderia mucho tiempo.
 
 ---
 
+## 5. Casos de prueba.
+> Es un _conjunto_ de __condiciones__ o variables
+bajo las cuales se _determinara_ si el __comportamiento__
+de una aplicacion o un sistema __resulta__ o no _aceptable_.
+
+> ¿_Que es un caso de prueba_?
+
+Responde a la pregunta: ¿_Que voy a probar_?
+
+Se desarrollan para __definir__ las acciones que son
+necesarias validar a fin de __asegurar__ que el sistema funcione
+correctamente y este construido con un alto nivel de calidad.
+
+> ¿_Como conseguirlo_?
+
+Estructurando como vamos a realizar las pruebas
+cubriendo la mayor cantidad de escenarios.
+
+> Identificando los escenarios de prueba.
+
+El objetivo de plantear escenarios de prueba es
+__obtener__ una _aproximacion_ para luego diseñar los casos
+de prueba correspondientes.
+
+- __Caja negra__: verifica las condiciones de la
+entrada __sin__ importar como esta codificado.
+- __Caja blanca__: verificacion del codigo.
+- __Caja gris__: Es una combinacion de ambas.
+
+![image](https://user-images.githubusercontent.com/120741890/214345508-24d72124-d1a6-4e63-8751-5b2012a9822d.png)
+
+Tenemos que tener en cuenta que los valores de entrada
+tambien denominados __inputs__ que son aquellos que nosotros ingresamos manualmente, se dividen en __dos__ tipos:
+- __validos__: Los que se espera que reciba.
+- __invalidos__ Los que no se espera que reciba.
+Y los valores de salida tambien llamados __outputs__
+que son los resultados que nosotros esperamos.
+
+> Diseñando los casos de prueba.
+
+Plantear los casos en base a los escenarios. <br>
+Luego de analizar las US, podemos dividir los casos en:
+
+![image](https://user-images.githubusercontent.com/120741890/214347670-c93ea35c-b091-4f6c-b2b5-aadd55fb037d.png)
+
+1. __Flujo positivo__: Cuando se cumple la situacion ideal
+de la historia __End2End__ que por lo general suele ser
+la mas importante y el __core__ de la funcionalidad.
+Pueden haber mas de uno.
+
+2. __Flujo Alternativo__: Se despreden del principal cuyas
+variantes representan una alternativa para validar.
+
+3. __Flujo negativo__: Son aquellos flujos que forzamos
+para que nos informen que no se cumple con lo 
+necesario para avanzar, puede ser el faltante de un dato,
+no respeta el formato, etc.
+
+> Proceso de una ejecucion
+
+![image](https://user-images.githubusercontent.com/120741890/214349875-572ef8f0-9364-4ca8-9037-e4511ae67493.png)
+
+> Estados de un caso de prueba.
+- __Failed__ (Fallo).
+El caso de prueba fallo en una o mas validaciones.
+En dicho caso se debe reportar un bug y clasificarlo
+segun la criticidad del mismo.
+- __Passed__ (Paso).
+El caso de prueba se ejecuto correctamente.
+En donde el resultado es el mismo al resultado __esperado__.
+- __Blocked__ (Bloqueada).
+El caso de prueba esta bloqueado por otro caso o
+paso antecesor.
+Se lo define cuando un caso anterior ha fallado y es
+precondicion para su ejecucion.
+Por lo tanto no se considera fallido porque
+no se ha realizado la validacion.
+
+> __Buenas practicas__ para escribir los casos de prueba.
+- Resumen / Titulo descriptivo del caso.
+En donde se detalla la finalidad que persigue el testing.
+Que vamos a probar, como lo vamos a probar, datos que necesitemos, etc.
+- Precondiciones.
+Requisitos necesarios previos para que este CP pueda
+pasar o aprobarse.
+Acceso a una BD, credenciales, un dato especifico, etc.
+- Pasos / Steps + Datos de prueba.
+El paso a seguir para replicar dicha prueba y ademas
+se recomienda agregar los datasets para saber
+si la prueba fallo por el uso de algun dato en particular.
+- Resultados esperados.
+Se detallara los resultados esperados de la validacion
+realizada en el paso.
+- Keywords.
+Se define el tipo de prueba que se va a realizar,
+es decir, si es funcional, no funcional, de tipo regresion, integracion, etc.
+- Requisitos.
+Es donde vamos a relacionar el CP con la US que vamos
+a estar testeando.
+- Tipo de ejecucion.
+Indicara si las pruebas seran de tipo manual o automatizadas.
+- Version.
+La version del caso, dado que cada caso puede mantener 
+su resultado final esperado o cambiar sus pasos
+y dichos resultados esperados de cada uno.
+Por lo que puede que un caso deba de modificar y ser
+una version 2, 3, etc.
+
+> ¿Splintear? (__Dividir__ las pruebas)
+- Ventaja: Tenemos bien identificados los casos que fallan.
+- Desventaja: Se necesita mas tiempo de escritura y 
+actualizacion de estados.
+
+Luego se debera decidir si se reporta un bug por caso
+fallido o se incluye todo en un mismo defecto.
+
+> Requisitos para ejecutar los CP
+
+- Diseño de escenarios de cobertura validos por el equipo.
+- Casos de prueba finalizados.
+- Data set generado. (Datos que se utilizaron par hacer las pruebas)
+- Contar con las configuraciones, accesos y usuarios
+necesarios para la utilizacion de la herramienta.
+- Historia en Jira con sub-tareas de desarrollo finalizadas,
+incluidas las pruebas unitarias.
+- Codigo deployado en el ambiente exclusivo de calidad, es decir en el ambiente de QA.
+- Ambientes disponibles, para evitar re-hacer las pruebas
+o que otro tambien las este haciendo al mismo tiempo.
+
+> Tareas de cierre de la ejecucion.
+- Recolectar evidencia.
+Pueden ser capturar, grabar la pantalla de ser necesario
+para mostrar la evidencia del resultado esperado que se cumpla.
+- Actualizar herramienta con estado final de la ejecucion.
+- Enviar reporte de ejecucion + defectos.
+
+---
