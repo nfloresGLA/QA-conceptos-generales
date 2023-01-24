@@ -198,7 +198,7 @@ Es responsabilidad de __Calidad__, y se realizan segun
 planificacion, cuando se dispone de poco tiempo, y suelen
 ser al inicio del Sprint en un entorno de Test.
 
-- Pruebas de regresion.
+- __Pruebas de regresion__.
 Suite de pruebas de todas las funcionalidades del software
 que aseguran que en las nuevas versiones no se introduzcan
 nuevos incidentes.
@@ -206,7 +206,7 @@ Es responsabilidad de __Calidad__ se realizan segun
 la planificacion y pueden ser al inicio del Sprint, en un
 entorno de Test.
 
-- Pruebas de aceptacion. (UAT)
+- __Pruebas de aceptacion__. (UAT)
 Son pruebas realizadas por el cliente/negocio en un 
 periodo de tiempo para corroborar que el sistema
 cumple con lo solicitado.
