@@ -138,3 +138,78 @@ Se comparten con el cliente, con el equipo de prueba, con los lideres de equipo 
 
 ---
 
+## 4. Tipos de test
+
+### 4.1 - __Pruebas funcionales__.
+> Estas pruebas __verifican__ que el producto cumple con lo especificado en los requerimientos, US o CU.
+
+<br>
+
+> __Tipos de pruebas__.
+
+- __Pruebas unitarias__.
+Prueban una unidad o fragmento de codigo mas pequeño
+que se puede aislar logicamente en un sistema.
+Es responsabilidad del __desarrollador__, que se realiza
+al terminar el codigo a testear en un ambiente de desarrollo.
+
+- __Pruebas de sistema funcional / integracion__.
+Aseguran que el sistema satisface las funcionalidades
+previamente diseñadas. Se evalua como los
+diferentes componentes de una aplicacion interactuan
+juntos en el sistema o aplicacion completa e integra.
+Se realizan mediante el diseño de casos de prueba
+que buscan evaluar cada una de las posibilidades para
+verificar si se cumplen los requerimientos.
+Son responsabilidad del __Calidad__ y se realizan una
+vez finalizadas las pruebas unitarias en un ambiente
+de prueba / test.
+
+    - __Look and feel__: Validar la apariencia de la aplicacion.
+        - Responsive: Verifica si se adaptan a las diferentes pantallas.
+        - __Brownsers__: Valida la compatibilidad con los diferentes 
+        navegadores, versiones y modo.
+        - __Platforms__: Verifica la aplicacion en diferentes
+        plataformas web o mobile (Android, IOS).
+    - __Enlaces__: Validar los links y redireccionamientos.
+    - __Integracion__: Los modulos se combinan y se testea
+    como un grupo integro y las interacciones con
+    las diferentes partes del sistema como BE, BD, Servicios
+    u APIS.
+    - __Accesibilidad__: Garantizan que todas las personas,
+    incluso las que poseen incovenientes puedan usar la aplicacion.
+- __Pruebas exploratorias__.
+Se utilizan en el momento que una persona necesita aprender 
+o conocer rapidamente el producto, proveer feedback.
+Se espera obtener el punto de vista del lado del usuario.
+Es responsabilidad de __Calidad__ y se realiza on demand, 
+en un ambiente Test / UAT (User Acceptance Testing).
+
+- __Pruebas de sanidad__.
+Prueban cambiamos menores, sin mucha profundidad 
+o para verificar si los defectos fueron arreglados.
+Es responsabilidad de __Calidad__ y se realizan 
+cuando se solicite y puede ser al inicio del Sprint en un ambiente de Test.
+
+- __Pruebas de humo__ (smook).
+Aseguran que las funcionalidades criticas estan funcionando correctamente. 
+Orientado a la estabilidad del sistema.
+Es responsabilidad de __Calidad__, y se realizan segun
+planificacion, cuando se dispone de poco tiempo, y suelen
+ser al inicio del Sprint en un entorno de Test.
+
+- Pruebas de regresion.
+Suite de pruebas de todas las funcionalidades del software
+que aseguran que en las nuevas versiones no se introduzcan
+nuevos incidentes.
+Es responsabilidad de __Calidad__ se realizan segun
+la planificacion y pueden ser al inicio del Sprint, en un
+entorno de Test.
+
+- Pruebas de aceptacion. (UAT)
+Son pruebas realizadas por el cliente/negocio en un 
+periodo de tiempo para corroborar que el sistema
+cumple con lo solicitado.
+Son responsabilidad del __cliente/usuario final__, 
+se realizan al finalizar el Sprint para recibir 
+feedback de la aplicacion en un ambiente UAT.
