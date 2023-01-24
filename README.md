@@ -104,3 +104,37 @@ __Caracteristicas__:
 - Se muestra predispuesto a apoyar y ayudar a los compañeros.
 
 ---
+
+## 3. Entregables de calidad.
+
+> ¿_Que es un entregable de calidad_?
+- Documentacion generada por el area de calidad,
+tambien llamados __artefactos__.
+- Es un conjunto de documentos que obtiene el __tester__.
+
+> __Clasificacion de un entregable de calidad__.
+- Checklist de Proyecto.
+- Plan de pruebas (Estrategia de pruebas).
+- Escenarios de prueba.
+- Casos de prueba.
+- Matriz de trazabilidad.
+- Reportes de prueba:
+    - Informe de avances diario.
+    - Informe al final de Sprint.
+    - Informe evolutivo de Sprint.
+
+> ¿_En que momento se utilizan_?
+- Checklist: Antes, durante y despues de cada iteracion.
+- Plan de pruebas y estrategias de prueba: Al inicio del proyecto.
+- Escenarios de prueba y casos de prueba: Durante el Sprint.
+- Matriz de trazabilidad: Durante el Sprint.
+- Reportes: Durante o al final de la ejecucion.
+- Manual del usuario: Al final del Sprint
+
+
+> ¿_Con quien se comparten los artefactos_?
+
+Se comparten con el cliente, con el equipo de prueba, con los lideres de equipo y los sponsor (partes interasadas del proyecto) y tambien con miembros de otros equipos.
+
+---
+
